@@ -1,0 +1,100 @@
+personalized_activity_planning_task:
+  description: >
+    Research and find cool things to do at {destination}.
+    Focus on activities and events that match the traveler's interests and age group.
+    Utilize internet search tools and recommendation engines to gather the information.
+    CRITICAL: The trip duration is {trip_duration}. You MUST plan activities for EVERY SINGLE DAY of the entire trip duration.
+    If the trip is 7 days, you must provide activities for all 7 days. If it's 14 days, provide for all 14 days.
+
+
+    Traveler's information:
+
+
+    - origin: {origin}
+
+    - destination: {destination}
+
+    - age of the traveler: {age}
+
+    - hotel localtion: {hotel_location}
+
+    - flight infromation: {flight_information}
+
+    - how long is the trip: {trip_duration}
+  expected_output: >
+    A list of recommended activities and events for EACH AND EVERY day of the {trip_duration} trip.
+    Each entry should include the activity name, location, a brief description, and why it's suitable for the traveler.
+    And potential reviews and ratings of the activities.
+    IMPORTANT: Ensure you have activities planned for the complete {trip_duration} duration.
+
+restaurant_scenic_location_scout_task:
+  description: >
+    Find highly-rated restaurants and dining experiences at {destination}.
+    Recommend scenic locations and fun activities that align with the traveler's preferences.
+    Use internet search tools, restaurant review sites, and travel guides.
+    Make sure to find a variety of options to suit different tastes and budgets, and ratings for them.
+
+    Traveler's information:
+
+
+    - origin: {origin}
+
+    - destination: {destination}
+
+    - age of the traveler: {age}
+
+    - hotel localtion: {hotel_location}
+
+    - flight infromation: {flight_information}
+
+    - how long is the trip: {trip_duration}
+
+    - budget: {budget}
+  expected_output: >
+    A list of recommended restaurants, scenic locations, and fun activities for each day of the trip.
+    Each entry should include the name, location (address), type of cuisine or activity, and a brief description and ratings.
+
+budget_optimization_task:
+  description: >
+    Analyze the proposed activities and restaurants to optimize the travel budget of {budget}.
+    Find cost-effective alternatives and provide budget breakdowns for each day.
+    Ensure the total cost stays within the specified budget while maintaining quality experiences.
+    Research free activities, happy hour deals, and budget-friendly alternatives.
+
+    Traveler's information:
+
+    - destination: {destination}
+    - budget: {budget}
+    - trip duration: {trip_duration}
+  expected_output: >
+    A detailed budget breakdown with optimized recommendations.
+    Include daily budget allocations, cost-saving tips, and alternative options for expensive activities.
+
+weather_adaptive_planning_task:
+  description: >
+    Check the weather forecast for {destination} during the travel dates and adapt the daily activities accordingly.
+    For each day, specify the weather conditions (sunny, rainy, cloudy, temperature) and recommend appropriate activities.
+    Suggest indoor activities for bad weather days and outdoor activities for good weather.
+    Provide daily packing recommendations based on weather conditions.
+
+    Traveler's information:
+
+    - destination: {destination}
+    - flight information: {flight_information}
+    - trip duration: {trip_duration}
+  expected_output: >
+    A day-by-day weather forecast with adapted activity recommendations.
+    Each day should include: weather conditions, temperature, indoor/outdoor activity suggestions, and what to pack for that day.
+
+itinerary_compilation_task:
+  description: >
+    Compile all researched information into a comprehensive day-by-day itinerary for the trip to {destination}.
+    Ensure the itinerary integrates flights, hotel information, and all planned activities and dining experiences.
+    Use text formatting and document creation tools to organize the information.
+    CRITICAL: The trip duration is {trip_duration}. You MUST create an itinerary that covers EVERY SINGLE DAY of the trip.
+    Count the days carefully and ensure you have a complete plan from Day 1 to the final day.
+  expected_output: >
+    A detailed itinerary document covering the COMPLETE {trip_duration}.
+    The itinerary MUST include a day-by-day plan for ALL days with flights, hotel details, activities, restaurants, and scenic locations.
+    IMPORTANT: Verify that you have created plans for the exact number of days specified in {trip_duration}.
+    For example, if trip_duration is "7 days", ensure you have Day 1, Day 2, Day 3, Day 4, Day 5, Day 6, and Day 7 all planned out.
