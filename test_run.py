@@ -8,7 +8,6 @@ from surprise_travel.crew import SurpriseTravelCrew
 def run():
     print("Starting Surprise Travel Crew...")
     
-    # Replace with your inputs
     inputs = {
         'origin': 'New York, JFK',
         'destination': 'Paris, CDG', 

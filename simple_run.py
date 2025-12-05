@@ -1,15 +1,9 @@
 #!/usr/bin/env python
-"""
-Simple script to run the Surprise Travel Crew
-Run this with: python simple_run.py
-"""
 import sys
 import os
 
-# Add src to path
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
 
-# Load environment variables
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -18,12 +12,11 @@ print("🌍 SURPRISE TRAVEL PLANNER")
 print("=" * 60)
 print()
 
-# Check for API keys
 openai_key = os.getenv('OPENAI_API_KEY')
 serper_key = os.getenv('SERPER_API_KEY')
 
 if not openai_key:
-    print("❌ ERROR: OPENAI_API_KEY not found in .env file")
+    print("ERROR: OPENAI_API_KEY not found in .env file")
     sys.exit(1)
 
 if not serper_key:
@@ -31,15 +24,15 @@ if not serper_key:
     print("   Web search functionality may be limited")
     print()
 
-print("✅ API Keys loaded successfully")
+print("API Keys loaded successfully")
 print()
 
 try:
     from surprise_travel.crew import SurpriseTravelCrew
-    print("✅ Modules imported successfully")
+    print("Modules imported successfully")
     print()
 except ImportError as e:
-    print(f"❌ ERROR importing modules: {e}")
+    print(f"ERROR importing modules: {e}")
     print()
     print("Please run: poetry install")
     sys.exit(1)
@@ -67,7 +60,7 @@ print()
 print("🚀 Initializing AI crew...")
 try:
     crew = SurpriseTravelCrew().crew()
-    print("✅ Crew initialized successfully!")
+    print(" Crew initialized successfully!")
     print()
     print("🤖 AI agents are planning your trip...")
     print("   This may take a few minutes...")
@@ -86,7 +79,7 @@ try:
 except Exception as e:
     print()
     print("=" * 60)
-    print("❌ ERROR occurred:")
+    print(" ERROR occurred:")
     print("=" * 60)
     print(f"{type(e).__name__}: {e}")
     print()
@@ -96,5 +89,5 @@ except Exception as e:
 
 print()
 print("=" * 60)
-print("✅ Process completed!")
+print(" Process completed!")
 print("=" * 60)

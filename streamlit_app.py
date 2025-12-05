@@ -118,7 +118,7 @@ if form_submitted:
                 st.markdown(str(trip_result))
                 
         except Exception as error:
-            st.error(f"❌ Error: {str(error)}")
+            st.error(f" Error: {str(error)}")
             st.info("💡 Make sure your API keys are properly configured in the .env file")
 
 with st.sidebar:

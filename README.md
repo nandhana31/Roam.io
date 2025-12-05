@@ -26,7 +26,7 @@ cd Roamio
 ### Step 2: Install Dependencies
 You can use either Poetry or pip:
 
-**Using pip (recommended for simplicity):**
+**Using pip:**
 ```bash
 pip install crewai crewai-tools streamlit python-dotenv
 ```
@@ -50,7 +50,7 @@ Get your API keys:
 
 ## How to Run
 
-### Option 1: Streamlit Web Application (Recommended)
+### Option 1: Streamlit Web Application
 Run the web-based user interface:
 
 ```bash
@@ -109,17 +109,17 @@ travel_params = {
 ```
 Roamio/
 ├── src/
-│   ├── crew.py              # AI agents and tasks configuration
-│   ├── main.py              # CLI entry point
+│   ├── crew.py              
+│   ├── main.py              
 │   ├── config/
-│   │   ├── agents.yaml      # Agent definitions
-│   │   └── tasks.yaml       # Task definitions
+│   │   ├── agents.yaml      
+│   │   └── tasks.yaml       
 │   └── tools/
-│       └── custom_tool.py   # Custom tool implementations
-├── streamlit_app.py         # Web interface
-├── pyproject.toml           # Project dependencies
-├── .env                     # API keys configuration
-└── README.md               # This file
+│       └── custom_tool.py   
+├── streamlit_app.py         
+├── pyproject.toml           
+├── .env                    
+└── README.md              
 ```
 
 ## AI Agents
@@ -147,10 +147,3 @@ Ensure you're using Python 3.10-3.13:
 python --version
 ```
 
-## Support
-For issues or questions, please refer to:
-- CrewAI Documentation: https://docs.crewai.com
-- Project Issues: <repository-issues-url>
-
-## License
-MIT License
