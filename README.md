@@ -10,6 +10,9 @@ Roamio is an AI-powered travel planning application that uses CrewAI to orchestr
 - **Weather-Adaptive Planning**: Dynamic itinerary adjustments based on weather forecasts
 - **Complete Itinerary**: Comprehensive day-by-day travel plans with all details
 
+## Demo
+https://github.com/user-attachments/assets/0cc0d6ce-7ae5-421c-b402-49c7aadd860a
+
 ## Prerequisites
 - Python 3.10 or higher (up to 3.13)
 - OpenAI API key
